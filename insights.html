@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insights hub | Fit time</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="Google workspace, Data analytics and governance, Gaming solutions, AR/VR immersive experience, Cloud computing / Hybrid cloud, Database and storage, AI  machine learning, GenAI application">
+  <meta name="description" content="Fit Time is a forward-thinking technology company dedicated to empowering businesses with innovative digital solutions.">
+
+  <!-- Favicon -->
+  <link href="images/favicon.png" rel="icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&amp;display=swap"
+    rel="stylesheet">  
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body data-lang="en" class="bg-dark">
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid ">
+
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/main-logo.png" alt="logo">
+          </a>
+        </div>
+
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item">
+                  <a href="index.html" class="item-anchor" data-effect="Home"><b>Home</b></a>
+                </li>
+                <li class="menu-item">
+                  <a href="solutions.html" class="item-anchor" data-effect="Shop"><b>Solutions</b></a>
+                </li>
+
+               <li class="menu-item">
+                  <a href="process.html" class="item-anchor" data-effect="Shop"><b>Process</b></a>
+                </li>
+
+                <li class="menu-item dropdown">
+                  <a class="item-anchor dropdown-toggle  active" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false" href="#"><b>Digital insights</b></a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a href="news.html" class="dropdown-item fw-light">News</a></li>
+                  <li><a href="insights.html" class="dropdown-item fw-light active">Insights hub</a></li>
+                </ul>
+
+                <li class="menu-item">
+                  <a href="about.html" class="item-anchor" data-effect="Blogs"><b>About</b></a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="contact.html" class="item-anchor"><b>Contact</b></a>
+                </li>              
+              </ul>
+            </div>             
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="pattern-blur">
+    <div class="pattern-overlay pattern-blur-right right-side-pattern">
+        <img src="images/pattern-blur-right.png">
+      </div>
+    <div class="container">
+        <h2 class="section-title light text-center my-5 pt-5 ">Insights hub</h2>
+        <img src="images/banner-insights.png" alt="img" class="img-fluid rounded-3">
+
+    </div>
+</section>
+
+<div class="padding-medium ">
+    <div class="container">
+        <div class="row my-5">
+            <div class="comments-wrap">
+                <h3 class="block-title">Industry perspectives</h3>
+                <p>Insights into industry trends to seize future opportunities</p>
+
+                <div class="comment-list">
+
+
+                    <article class="comment-item bg-blue-trans my-3 rounded-3 p-3 row d-flex align-items-center">
+                      <div class="col-md-9">
+                            <div class="comment-meta d-flex gap-3 text-black">
+                              <div class="view-btn"><b>Retail and cloud analytics</b>
+                                <h3 class="author-name block-title text-light">Cloud analytics reshaping retail
+                                </h3>
+                              </div>
+                                
+                            </div>
+                            <p class="m-0">Retailers are testing cloud and AI for demand forecasting and inventory management. Early results show promising efficiency gains.</p>
+                            <div onclick="openModal('modal1')">
+                              <a class="btn btn-linear mt-3">Read more</a>
+                            </div>
+                    </div>
+                            <div class="col-md-3">
+                            <img src="images/industry-1.jpg" alt="default"
+                                class="commentor-image img-fluid color">
+                        </div>
+                        
+                        
+                        <div id="modal1" class="modal">
+                          <div class="modal-content-test">
+                            <span class="close1" onclick="closeModal('modal1')">&times;</span>
+
+
+
+                             <div class="container">
+                                <div class="row d-flex flex-wrap justify-content-center align-items-center">
+                                  <div class="col-md-6 pe-3">
+                                    <div class="image-holder color ">
+                                      <img src="images/industry-1-content.jpg" alt="single image" class="banner-image">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 ">
+                                    <div class="">
+                                      <div class="subscribe-header">
+                                        <div class="view-btn"><b>Retail and cloud analytics</b></div>
+                                        <h3 class="block-title">Cloud Analytics Reshaping Retail</h3>
+                                        <em class="em">As digital transformation becomes a global trend, the retail industry is increasingly adopting cloud analytics tools to gain more precise insights into customer behavior.</em>
+                                        <p>Some companies are experimenting with AI to forecast demand and manage supply chains. While still at an exploratory stage, early results suggest this approach may reduce inventory costs and improve logistics efficiency. For SMEs, this represents a low-barrier entry point to gradually building a data-driven foundation for operations.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="comment-item bg-blue-trans my-3 rounded-3 p-3 row d-flex align-items-center">
+                      <div class="col-md-9">
+                            <div class="comment-meta d-flex gap-3 text-black">
+                              <div class="view-btn"><b>Education industry and immersive experiences</b>
+                                <h3 class="author-name block-title text-light">The future of XR in education
+                                </h3>
+                              </div>
+                                
+                            </div>
+                            <p class="m-0">Small-scale education pilots use XR for immersive learning, boosting engagement and feedback, hinting at education’s digital future.</p>
+                            <div onclick="openModal('modal2')">
+                              <a class="btn btn-linear mt-3">Read more</a>
+                            </div>
+                    </div>
+                            <div class="col-md-3">
+                            <img src="images/industry-2.jpg" alt="default"
+                                class="commentor-image img-fluid color">
+                        </div>
+                        
+                        
+                        <div id="modal2" class="modal">
+                          <div class="modal-content-test">
+                            <span class="close1" onclick="closeModal('modal2')">&times;</span>
+                            
+
+                            <div class="container">
+                              <div class="row d-flex flex-wrap justify-content-center align-items-center">
+                                <div class="col-md-6 pe-3">
+                                  <div class="image-holder color">
+                                    <img src="images/industry-2-content.jpg" alt="single image" class="banner-image">
+                                  </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                  <div class="">
+                                    <div class="subscribe-header">
+                                      <div class="view-btn"><b>Education and immersive experiences</b></div>
+                                      <h3 class="block-title">The future of XR in education</h3>
+                                      <em class="em">In recent years, the education sector has actively explored the adoption of XR technology to make the learning process more interactive and immersive.</em>
+                                      <p>In several pilot projects, students demonstrated greater engagement during immersive lessons, while teachers benefited from real-time feedback to refine teaching strategies. Although applications remain limited in scale, XR in education shows growing potential. This trend suggests that future learning models will increasingly rely on digital tools, providing institutions with new opportunities for innovation.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                    </article>
+
+
+
+
+
+                  <div class="comments-wrap" style="padding-top:50px;">
+                  <h3 class="block-title ">Product application articles</h3>
+                <p>Exploring product applications and innovative use cases</p>
+
+                <div class="comment-list">
+
+
+                     <article class="comment-item bg-blue-trans my-3 rounded-3 p-3 row d-flex align-items-center">
+
+                      <div class="col-md-3">
+                        <img src="images/articles-1.jpg" alt="default"
+                            class="commentor-image img-fluid color">
+                    </div>   
+
+                      <div class="col-md-9">
+                            <div class="comment-meta d-flex gap-3 text-black">
+                              <div class="view-btn"><b>Enhancing collaboration with google workspace</b>
+                                <h3 class="author-name block-title text-light">Enhancing collaboration with google workspace
+                                </h3>
+                              </div>
+                                
+                            </div>
+                            <p class="m-0">A consulting firm streamlined projects with Google Workspace, enabling real-time collaboration and improved transparency.</p>
+                            <div onclick="openModal('modal3')">
+                              <a class="btn btn-linear mt-3">Read more</a>
+                            </div>
+                    </div>
+
+                       
+                    <div id="modal3" class="modal">
+                      <div class="modal-content-test">
+                        <span class="close1" onclick="closeModal('modal3')">&times;</span>
+
+
+
+                         <div class="container">
+                            <div class="row d-flex flex-wrap justify-content-center align-items-center">
+                              <div class="col-md-6 pe-3">
+                                <div class="image-holder color">
+                                  <img src="images/articles-1-contect.jpg" alt="single image" class="banner-image">
+                                </div>
+                              </div>
+                              <div class="col-md-6 ">
+                                <div class="">
+                                  <div class="subscribe-header">
+                                    <div class="view-btn"><b>Enhancing collaboration with google workspace</b></div>
+                                    <h3 class="block-title">Enhancing collaboration with google workspace</h3>
+                                    <em class="em">Recently, we helped a small consulting firm implement Google Workspace to streamline document management, scheduling, and project tracking.</em>
+                                    <p>Team members could edit shared files in real time and quickly update project progress through shared folders. This solution reduced communication overhead while improving project transparency, allowing managers to gain clearer visibility. The case demonstrates how even small and medium-sized businesses can improve efficiency through accessible cloud collaboration tools.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                                                
+                    </article>
+
+
+                    <article class="comment-item bg-blue-trans my-3 rounded-3 p-3 row d-flex align-items-center">
+
+                      <div class="col-md-3">
+                        <img src="images/articles-2.jpg" alt="default"
+                            class="commentor-image img-fluid color">
+                    </div>   
+
+                      <div class="col-md-9">
+                            <div class="comment-meta d-flex gap-3 text-black">
+                              <div class="view-btn"><b>AI-powered data analytics</b>
+                                <h3 class="author-name block-title text-light">AI-supported data analytics in education
+                                </h3>
+                              </div>
+                                
+                            </div>
+                            <p class="m-0">In a pilot project, AI analyzed attendance and feedback, helping an education provider adjust course strategies faster.</p>
+                            <div onclick="openModal('modal4')">
+                              <a class="btn btn-linear mt-3">Read more</a>
+                            </div>
+                    </div>  
+                    
+
+                    <div id="modal4" class="modal">
+                      <div class="modal-content-test">
+                        <span class="close1" onclick="closeModal('modal4')">&times;</span>
+                        
+
+                        <div class="container">
+                          <div class="row d-flex flex-wrap justify-content-center align-items-center">
+                            <div class="col-md-6 pe-3">
+                              <div class="image-holder color">
+                                <img src="images/articles-2-contect.jpg" alt="single image" class="banner-image">
+                              </div>
+                            </div>
+                            <div class="col-md-6 ">
+                              <div class="">
+                                <div class="subscribe-header">
+                                  <div class="view-btn"><b>AI-powered data analytics</b></div>
+                                  <h3 class="block-title">AI-supported data analytics in education</h3>
+                                  <em class="em">In a pilot collaboration with an educational institution, we used a simple machine learning model to help analyze students’ attendance records and course satisfaction data.</em>
+                                  <p class="pt-2">The analysis helped the institution quickly identify courses needing improvement and adjust content for different learner groups. Although this was a small-scale, early-stage project, it illustrates how AI can be introduced into education with low barriers while laying the groundwork for data-driven decision-making.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                    </article>
+
+                </div>               
+                
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="padding-large pattern-blur">
+    <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+        <img src="images/footer-pattern.png">
+    </div>
+    <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item item-001">
+                    <img src="images/main-logo-1.png" alt="logo">
+                    <p>Fit Time is a forward-thinking technology company dedicated to empowering businesses with innovative digital solutions.
+                      </p>                   
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <div class="footer-item item-002 content-light">
+                    <h4 class="solutions-footer-tittle">Quick links</h4>
+                    <ul class="footer-menu list-unstyled">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="process.html">Process</a>
+                        </li>
+                        <li>
+                          <a href="news.html">News</a>
+                      </li>
+                      <li>
+                        <a href="#">Insights hub</a>
+                    </li>                            
+                        <li>
+                          <a href="about.html">About</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>           
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item item-004 content-light">
+                    <h4 data-lang-show="en"  class="solutions-footer-tittle">Solutions</h4>
+                    <h4 data-lang-show="zh" class="solutions-footer-tittle">解決方案</h4>
+                    <ul class="footer-menu list-unstyled">
+                        <li>
+                            <a href="google_workspace.html">Google workspace</a>
+                        </li>
+                        <li>
+                            <a href="data_analytics.html">Data analytics and governance</a>
+                        </li>
+                        <li>
+                            <a href="gaming.html">Gaming solutions</a>
+                        </li>
+                        <li>
+                            <a href="ar_vr_immersive.html">AR/VR immersive experience</a>
+                        </li>
+                        <li>
+                          <a href="cloud_computing_hybrid_cloud.html">Cloud computing</a>
+                      </li>
+                      <li>
+                        <a href="database_and_storage.html">Database and storage</a>
+                    </li>
+                    <li>
+                      <a href="ai_machine.html">AI machine learning</a>
+                  </li>
+                  <li>
+                    <a href="genai_application.html">GenAI application</a>
+                </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item item-005 content-light">
+                    <h4 class="solutions-footer-tittle">Contact</h4>
+                    <ul class="footer-menu list-unstyled">
+                        <li>
+                            <p>Let’s explore how SAINT BEST can help you unlock your digital potential.</p>
+                        </li>
+                    </ul>
+                    <div>
+                      <a href="contact.html" class="btn btn-linear btn-medium">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<hr>
+<div id="footer-bottom">
+    <div class="container">
+        <div class="row text-center">
+            <p>© 2025 Copyright FIT TIME INTERNATIONAL CO., LTD. All rights
+                reserved</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+  function openModal(id) {
+document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+document.getElementById(id).style.display = "none";
+}
+
+// 點擊背景關閉
+window.onclick = function(event) {
+document.querySelectorAll('.modal').forEach(modal => {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+});
+}
+
+</script>
+
+
+
+<!-- /* ---------語言切換--------- */ -->
+<script>
+  function setLang(lang) {
+  document.body.setAttribute("data-lang", lang);
+  localStorage.setItem("lang", lang); // 存到瀏覽器
+  applyTranslations(lang);
+}
+
+
+function setLang(lang) {
+  document.body.setAttribute("data-lang", lang);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    el.textContent = translations[lang][key];
+  });
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en"; // 預設英文
+  document.body.setAttribute("data-lang", savedLang);
+  applyTranslations(savedLang);
+});
+
+
+</script>
+
+
+<script>
+const translations = {
+  en: {
+    learnMore: "Learn More",
+    contact: "Contact Us",
+    home: "Home",
+    solutions:"Solutions",
+    process:"Process",
+    digitalinsights:"Digital insights",
+    about:"About",
+    contact_nav:"Contact",
+    news:"News",
+    insightshub:"Insights hub"
+  },
+  zh: {
+    learnMore: "了解更多",
+    contact: "聯絡我們",
+    home: "主頁",
+    solutions:"解決方案",
+    process:"流程",
+    digitalinsights:"數位洞察",
+    about:"關於公司",
+    contact_nav:"聯繫我們",
+    news:"最新消息",
+    insightshub:"產業觀點"
+  }
+};
+
+
+</script>
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>

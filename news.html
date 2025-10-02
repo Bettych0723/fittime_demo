@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News | Fit time</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="Google workspace, Data analytics and governance, Gaming solutions, AR/VR immersive experience, Cloud computing / Hybrid cloud, Database and storage, AI  machine learning, GenAI application">
+  <meta name="description" content="Fit Time is a forward-thinking technology company dedicated to empowering businesses with innovative digital solutions.">
+
+    <!-- Favicon -->
+  <link href="images/favicon.png" rel="icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"  rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body class="bg-dark"> 
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid ">
+
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/main-logo.png" alt="logo">
+          </a>
+        </div>
+
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item ">
+                  <a href="index.html" class="item-anchor" data-effect="Home" data-i18n="home"><b>Home</b></a>
+                </li>                
+
+
+                <li class="menu-item">
+                  <a href="solutions.html" class="item-anchor" data-effect="Shop" data-i18n="solutions"><b>Solutions</b></a>
+                </li>
+                
+                <li class="menu-item">
+                  <a href="process.html" class="item-anchor" data-effect="Shop" data-i18n="process">Process</a>
+                </li>
+
+                <li class="menu-item dropdown">
+                  <a class="item-anchor dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false" data-i18n="digitalinsights"><b>Digital insights</b></a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a href="news.html" class="dropdown-item fw-light active" data-i18n="news">News</a></li>
+                  <li><a href="insights.html" class="dropdown-item fw-light" data-i18n="insightshub">Insights hub</a></li>
+                </ul>
+              </li>
+
+                <li class="menu-item">
+                  <a href="about.html" class="item-anchor" data-effect="Blogs" data-i18n="about"><b>About</b></a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="contact.html" class="item-anchor" data-i18n="contact_nav"><b>Contact</b></a>
+                </li>
+              </ul>
+            </div>            
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+    <section id="hero" class="pattern-blur">
+        <div class="pattern-overlay pattern-blur-right right-side-pattern">
+            <img src="images/pattern-blur-right.png">
+        </div>
+        <div class="container ">
+            <h2 class="section-title light text-center mt-5 pt-5">News</h2>
+        </div>
+    </section>
+
+
+    <section id="blog" class="padding-large pt-5">
+      <div class="container">
+        <div class="mb-4">
+          <p class="text-center rounded-pill p-2">
+            <button class="filter-button px-4 py-1 me-2 mb-2 margin-0 border-0 active" data-filter="*">All</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 margin-0 border-0" data-filter=".company">Company news</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 margin-0 border-0" data-filter=".industry">Industry news</button>
+            <button class="filter-button px-4 py-1 me-2 mb-2 margin-0 border-0" data-filter=".media">Media coverage</button>           
+          </p>
+        </div>
+        <div class="product-content">
+          <div class="row">
+    
+            <!-- 卡片 1 -->
+            <div class="col-md-4 col-sm-6 filter-item company">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal1')">
+                    <img src="images/company_1.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-primary text-white py-1 px-2">
+                      <b>Company news</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal1')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">
+                    Fit time launches beta version of collaboration and data management tool
+                  </h3>
+                </div>
+    
+                <!-- Modal 1 -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <img src="images/company_1.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Company news</b></div>
+                    <h3 class="block-title">
+                      Fit time launches beta version of collaboration and data management tool
+                    </h3>
+                    <p>
+                      Fit time officially launched its first beta version of a collaboration and data
+                      management tool, designed for small and medium-sized teams. The beta focuses on
+                      file sharing and online collaboration features, receiving positive feedback from
+                      initial users. Future iterations will incorporate user feedback to enhance and
+                      refine the solution.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- 卡片 2 -->
+            <div class="col-md-4 col-sm-6 filter-item company">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal2')">
+                    <img src="images/company_2.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-primary text-white py-1 px-2">
+                      <b>Company news</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal2')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">Fit time explores cross-sector collaboration in XR applications
+                  </h3>
+                </div>
+    
+                <!-- Modal 2 -->
+                <div id="modal2" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <img src="images/company_2.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Company news</b></div>
+                    <h3 class="block-title">
+                      Fit time explores cross-sector collaboration in XR applications
+                    </h3>
+                    <p>At this early stage, Fit time has initiated discussions with partners in education and digital content to explore potential applications of XR technology in learning and training. The collaboration will begin with small-scale trials, gradually validating XR’s practical value in various scenarios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- 卡片 3 -->
+            <div class="col-md-4 col-sm-6 company filter-item company">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3  my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal3')">
+                    <img src="images/company_3.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-primary text-white py-1 px-2">
+                      <b>Company news</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal3')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">
+                    Fit time completes first cloud solution test to support small teams
+                  </h3>
+                </div>
+    
+                <!-- Modal 3 -->
+                <div id="modal3" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <img src="images/company_3.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Company news</b></div>
+                    <h3 class="block-title">Fit time completes first cloud solution test to support small teams
+                    </h3>
+                    <p>Fit time recently completed its first cloud solution test, successfully applied to the data-sharing needs of a small business. While modest in scale, this marks the team’s first step in delivering practical solutions and highlights future growth potential.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+             <!-- 卡片 4 -->
+             <div class="col-md-4 col-sm-6 filter-item industry">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3   my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal4')">
+                    <img src="images/industry_4.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-success text-white py-1 px-2">
+                      <b>Industry news</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal4')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">AI tools becoming mainstream in small and medium-sized enterprises
+                  </h3>
+                </div>
+    
+                <!-- Modal 4 -->
+                <div id="modal4" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <img src="images/industry_4.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Industry news</b></div>
+                    <h3 class="block-title">AI tools becoming mainstream in small and medium-sized enterprises
+                    </h3>
+                    <p>With the rapid advancement of AI, more SMEs are adopting AI tools to improve daily operations. Fit time has observed significant improvements in content production and workflow efficiency, signaling the expanding adoption of AI across industries.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- 卡片 5 -->
+            <div class="col-md-4 col-sm-6 filter-item industry">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3   my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal5')">
+                    <img src="images/industry_5.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-success text-white py-1 px-2">
+                      <b>Industry news</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal5')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">XR pilot projects on the rise, education and training lead the way
+                  </h3>
+                </div>
+    
+                <!-- Modal 5 -->
+                <div id="modal5" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <img src="images/industry_5.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Industry news</b></div>
+                    <h3 class="block-title">XR pilot projects on the rise, education and training lead the way
+                    </h3>
+                    <p>Recently, several education and training institutions have launched XR pilot projects, ranging from small-scale courses to immersive learning modules. Fit time will continue monitoring these developments and sharing industry insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+           
+            <!-- 卡片 7 -->
+            <div class="col-md-4 col-sm-6 filter-item media">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3 my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal7')">
+                    <img src="images/media-1.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-warning text-drak py-1 px-2">
+                      <b>Media coverage</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal7')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">Fit time featured in media for startup vision and early-stage challenges
+                  </h3>
+                </div>
+    
+                <!-- Modal 7 -->
+                <div id="modal7" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal7')">&times;</span>
+                    <img src="images/media-1.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Media coverage</b></div>
+                    <h3 class="block-title">Fit time featured in media for startup vision and early-stage challenges
+                    </h3>
+                    <p>Fit time was recently featured in an innovation media interview, where the team shared its early-stage journey and challenges. The team emphasized using an “incremental testing” approach to validate solutions and expressed ambitions to expand applications in the future.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- 卡片 8 -->
+            <div class="col-md-4 col-sm-6 filter-item media">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3   my-5">
+                <div class="product-detail">
+                  <div class="clients-detail position-relative card" onclick="openModal('modal8')">
+                    <img src="images/media-2.jpg" alt="clients" class="color2">
+                    <div class="position-absolute top-0 start-0 bg-warning text-drak py-1 px-2">
+                      <b>Media coverage</b>
+                    </div>
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+                <div class="card-text" onclick="openModal('modal8')" style="cursor: pointer;">
+                  <h3 class="block-title margin-tt">Local media covers fit time’s VR pilot project in education
+                  </h3>
+                </div>
+    
+                <!-- Modal 8 -->
+                <div id="modal8" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal8')">&times;</span>
+                    <img src="images/media-2.jpg" alt="Finance" class="color2">
+                    <div class="view-btn"><b>Media coverage</b></div>
+                    <h3 class="block-title">
+                      Local media covers fit time’s VR pilot project in education
+                    </h3>
+                    <p>Fit time took part in a small-scale VR pilot project designed to test immersive learning methods. The project gave students an opportunity to explore lessons through interactive experiences and received encouraging feedback. This early step reflects both the team’s commitment and XR’s promise for educational applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="footer" class="padding-large pattern-blur">
+      <div class="pattern-overlay pattern-blur-footer right-side-pattern">
+          <img src="images/footer-pattern.png">
+      </div>
+      <div class="container">
+          <div class="row d-flex flex-wrap justify-content-between">
+              <div class="col-lg-3 col-md-6">
+                  <div class="footer-item item-001">
+                      <img src="images/main-logo-1.png" alt="logo">
+                      <p>Fit Time is a forward-thinking technology company dedicated to empowering businesses with innovative digital solutions.
+                        </p>                    
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                  <div class="footer-item item-002 content-light">
+                      <h4 class="solutions-footer-tittle">Quick links</h4>
+                      <ul class="footer-menu list-unstyled">
+                          <li>
+                              <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                              <a href="process.html">Process</a>
+                          </li>
+                          <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                          <a href="insights.html">Insights hub</a>
+                      </li>                            
+                          <li>
+                            <a href="about.html">About</a>
+                        </li>
+                      </ul>
+                  </div>
+              </div>             
+              <div class="col-lg-3 col-md-6">
+                  <div class="footer-item item-004 content-light">
+                      <h4 class="solutions-footer-tittle">Solutions</h4>
+                      <ul class="footer-menu list-unstyled">
+                          <li>
+                              <a href="google_workspace.html">Google workspace</a>
+                          </li>
+                          <li>
+                              <a href="data_analytics.html">Data analytics and governance</a>
+                          </li>
+                          <li>
+                              <a href="gaming.html">Gaming solutions</a>
+                          </li>
+                          <li>
+                              <a href="ar_vr_immersive.html">AR/VR immersive experience</a>
+                          </li>
+                          <li>
+                            <a href="cloud_computing_hybrid_cloud.html">Cloud computing</a>
+                        </li>
+                        <li>
+                          <a href="database_and_storage.html">Database and storage</a>
+                      </li>
+                      <li>
+                        <a href="ai_machine.html">AI machine learning</a>
+                    </li>
+                    <li>
+                      <a href="genai_application.html">GenAI application</a>
+                  </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="footer-item item-005 content-light">
+                      <h4 class="solutions-footer-tittle">Contact</h4>
+                      <ul class="footer-menu list-unstyled">
+                          <li>
+                              <p>Let’s explore your vision together to find the best path for digital transformation.</p>
+                          </li>
+                      </ul>
+                      <div>
+                        <a href="contact.html" class="btn btn-linear btn-medium">Contact us</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <hr>
+<div id="footer-bottom">
+    <div class="container">
+        <div class="row text-center">
+            <p>© 2025 Copyright FIT TIME INTERNATIONAL CO., LTD. All rights
+                reserved</p>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+      // Modal 開關
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    
+      // 過濾功能
+      document.querySelectorAll('.filter-button').forEach(button => {
+        button.addEventListener('click', function() {
+          // 移除舊的 active
+          document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+    
+          const filterValue = this.getAttribute('data-filter');
+          const items = document.querySelectorAll('.filter-item');
+    
+          items.forEach(item => {
+            if (filterValue === '*' || item.classList.contains(filterValue.substring(1))) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+    
+
+
+
+
+    <script>
+      function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// 點擊背景關閉
+window.onclick = function(event) {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+
+      </script>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
